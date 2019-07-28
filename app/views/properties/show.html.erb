@@ -1,2 +1,12 @@
-<h1>Properties#show</h1>
-<p>Find me in app/views/properties/show.html.erb</p>
+<h1><%= @property.address %></h1>
+<p>Property Type: <%= @property_type.name %></p>
+<%= image_tag @property.image, :class => 'style-item-img' if @property.image.present? %>
+<div class="property-description">
+  <%= @property.description %>
+</div>
+<div class="property-agent">
+  <p>Agent:</p>
+  <p><%= @agent.name %></p>
+  <p><%= @agent.email %></p>
+  <p><%= @agent.phone %></p>
+</div>
