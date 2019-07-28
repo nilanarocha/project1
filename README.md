@@ -1,5 +1,3 @@
-
-
 rails new real-estate —skip-git -T  -d postgresql
 
 open `Gemfile` and add `pry-rails` as development dependency
