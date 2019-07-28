@@ -1,7 +1,11 @@
 <h1>Properties</h1>
+<p>Showing results for <b><%= @search %></b></p>
 <% @properties.each do |property| %>
   <%= link_to property, :class => 'style-item-link', :method => 'get' do %>
     <%= image_tag property.image, :class => 'style-item-img' if property.image.present? %>
     <%= property.address %>
   <% end %>
+<% end %>
+<% if @properties.empty? %>
+  <p>No results found for this search</p>
 <% end %>

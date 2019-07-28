@@ -2,7 +2,11 @@
 
 class PropertiesController < ApplicationController
   def index
-    @properties = Property.all
+    # Showing the text used for search
+    @search = params[:search]
+    # Search all properties with the search address
+    # searching case insensitive "LOWER(address) LIKE LOWER('%#{@search}%')"
+    @properties = Property.where("LOWER(address) LIKE LOWER('%#{@search}%')")
   end
 
   def show
