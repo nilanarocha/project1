@@ -1,6 +1,6 @@
 <h1><%= @property.address %></h1>
-<p>Property Type: <%= @property_type.name %></p>
 <%= image_tag @property.image, :class => 'style-item-img' if @property.image.present? %>
+<p>Property Type: <%= @property_type.name %></p>
 <div class="property-description">
   <%= @property.description %>
 </div>
