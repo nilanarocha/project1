@@ -6,7 +6,7 @@ class PropertiesController < ApplicationController
     @search = params[:search]
     # Search all properties with the search address
     # searching case insensitive "LOWER(address) LIKE LOWER('%#{@search}%')"
-    @properties = Property.where("LOWER(address) LIKE LOWER('%#{@search}%')")
+    @properties = Property.where("LOWER(address) LIKE LOWER('%#{@search}%') OR LOWER(description) LIKE LOWER('%#{@search}%')")
   end
 
   def show
