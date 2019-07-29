@@ -11,5 +11,5 @@
 #
 
 class PropertyType < ApplicationRecord
-  belongs_to :properties, class_name: 'Property'
+  belongs_to :properties, class_name: 'Property', optional: true
 end

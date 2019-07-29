@@ -4,6 +4,9 @@
 <div class="property-description">
   <%= @property.description %>
 </div>
+<% if @property.location.present? %>
+  <iframe src="<%= @property.location %>" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+<% end %>
 <div class="property-agent">
   <p>Agent:</p>
   <p><%= @agent.name %></p>
