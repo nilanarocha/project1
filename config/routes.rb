@@ -3,7 +3,8 @@
 Rails.application.routes.draw do
   get '/properties/list' => 'properties#index'
   get '/properties/:id' => 'properties#show'
-  get '/agents/:id' => 'agents#index'
+  get '/agents/:id' => 'agents#show'
+  get '/agents/list' => 'agents#index'
   root to: 'homepage#index'
   resources :homepage
   resources :properties

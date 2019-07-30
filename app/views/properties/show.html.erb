@@ -13,6 +13,9 @@
   <div class="col-md-4">
     <div class="property-agent">
       <p>Agent:</p>
+      <%= link_to @agent, :class => "", :method => 'get' do %>
+        <%= image_tag @agent.image, :class => 'img-thumbnail' if @agent.image.present? %>
+      <% end %>
       <p><%= @agent.name %></p>
       <p><%= @agent.email %></p>
       <p><%= @agent.phone %></p>

@@ -19,8 +19,8 @@ PropertyType.create(name: 'Townhouse')
 Agent.destroy_all
 puts 'Creating agents'
 
-Agent.create(name: 'Hobert', phone: '0344 089 756', email: 'Hobert@home.com')
-Agent.create(name: 'Meagan', phone: '0344 079 706', email: 'meagan@home.com')
+Agent.create(image: 'https://www.bhsusa.com/bhsmedia/agents/TNC_p.jpg', name: 'Hobert', phone: '0344 089 756', email: 'Hobert@home.com')
+Agent.create(image: 'https://www.fmrealty.com/photos/agent/R21833.jpg', name: 'Meagan', phone: '0344 079 706', email: 'meagan@home.com')
 
 Property.destroy_all
 puts 'Creating property'
