@@ -27,9 +27,12 @@ puts 'Creating property'
 
 Property.create(
   address: '1/2-4 Pyrmont Street, Pyrmont',
-  description: '$1125/w
-  3 bedrooms/ 2 bathrooms/ 1 car space.
-  This terrace presents an exciting opportunity to rent a unique property in a premium Pyrmont setting.
+  bedroom: 3,
+  bathroom: 2,
+  car_space: 1,
+  price: '$1125/w',
+  description:
+  'This terrace presents an exciting opportunity to rent a unique property in a premium Pyrmont setting.
   This residence has been renovated throughout and provides excellent scope for families.
   Features include:
   - Well-appointed throughout and presented in great condition
@@ -37,7 +40,7 @@ Property.create(
   - Well-equipped open gas kitchen flowing to outdoor area, full bathroom
   - Private outdoor areas include a courtyard garden, patio and terrace
   - Ready to live in or lease out immediately with scope to update
-  - Rarely does an opportunity arise that presents a lifestyle of such value, versatility and prime positioning with Pyrmont/s host of cafes,
+  - Rarely does an opportunity arise that presents a lifestyle of such value, versatility and prime positioning with Pyrmont\'s host of cafes,
   shopping and the light rail station just a short stroll away.',
   image: 'https://i2.au.reastatic.net/800x600/65120f63b60cbb89d4cbbf853945054ffed6d741f6f1164c517aac8e1677f548/main.jpg',
   location: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.477210830517!2d151.19715921547626!3d-33.87736162693527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae2544c9d017%3A0x490ff8c094b625d6!2s1+Pyrmont+St%2C+Ultimo+NSW+2007!5e0!3m2!1sen!2sau!4v1564449456915!5m2!1sen!2sau',
@@ -46,9 +49,11 @@ Property.create(
 )
 Property.create(
   address: '2A McDonald St, Cronulla',
-  description: '$3773/w
-  3 bedrooms/ 2 bathrooms/ 2 garages.
-  Fully Furnished, Cronulla Ocean View Apartment
+  bedroom: 3,
+  bathroom: 2,
+  car_space: 2,
+  price: '$3773/w',
+  description: 'Fully Furnished, Cronulla Ocean View Apartment
   Wake up to spectacular sunrises.
   Every day can be as relaxed or active as you want!
   Enjoy outstanding foreshore, promenade walks along the Esplanade footpath stretching from Bass and Flinders monument at the mouth of Port Hacking to Wanda surf Life Saving Club and passing by the Norfolk Island pine trees featured in some of the view photos taken from the apartment.
@@ -83,9 +88,11 @@ Property.create(
 )
 Property.create(
   address: '9/1 Castlereagh St, Sydney',
-  description: '$600/w
-  1 car space
-  Deluxe Studio Accommodation In Sydney
+  price: '$600/w',
+  bedroom: 0,
+  bathroom: 0,
+  car_space: 1,
+  description: ' Deluxe Studio Accommodation In Sydney
   Our well-appointed, fully furnished studio apartments are designed for comfort and practicality with a touch of luxury.
   The studios have opening windows to admire the Sydney views, a state of the art home entertainment system, microwave, kettle and Nespresso coffee machine.
   As a special touch, your minibar is stocked with a boutique beer from Sydney’s oldest pub, The Lord Nelson Brewery, as well as a premium beer and wine selection.
@@ -113,8 +120,11 @@ Property.create(
 )
 Property.create(
   address: '2/24 Marlo Road, Cronulla',
-  description: '$950/w
-  4 bedrooms/ 2 bathrooms/ 1 garage, Beachside Luxury
+  price: '$950/w',
+  bedroom: 4,
+  bathroom: 2,
+  car_space: 1,
+  description: ' Beachside Luxury
   This immaculately renovated four bedroom townhouse offers the ultimate in coastal luxury with impressive sleek designs. Set in a highly regarded boutique complex of only three and ideally located just a short stroll from cafes, shops and transport.
   Features include:
   - Gourmet kitchen with gas stainless steel appliances & breakfast bar
@@ -131,9 +141,11 @@ Property.create(
 )
 Property.create(
   address: '28/149 Pyrmont Street',
-  description: '$1100/w
-  2 bedrooms/ 2 bathrooms/ 1 garage,
-  Stunning harbour views
+  price: '$1100/w',
+  bedroom: 2,
+  bathroom: 2,
+  car_space: 1,
+  description: ' Stunning harbour views
   The ultimate in luxury living, this exquisite apartment is the epitome of sophisticated contemporary design. Occupying a premier blue ribbon setting, the impressively well-proportioned interiors open to embrace spectacular uninterrupted views of the iconic Harbour.
   Features include:
   - Beautifully appointed with impeccable designer finishes

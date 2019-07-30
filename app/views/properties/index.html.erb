@@ -1,11 +1,25 @@
 <h1>Properties</h1>
 <p>Showing results for <b><%= @search %></b> with property <b><%= @property_type %></b></p>
-<% @properties.each do |property| %>
-  <%= link_to property, :class => 'style-item-link', :method => 'get' do %>
-    <%= image_tag property.image, :class => 'style-item-img' if property.image.present? %>
-    <%= property.address %>
+<div class="row mb-2">
+  <% @properties.each do |property| %>
+    <%= link_to property, :class => "property-list-item-link", :method => 'get' do %>
+      <div class="col-md-12">
+        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col-md-8 p-4 d-flex flex-column position-static">
+            <h3 class="mb-0"><%= property.address %></h3>
+            <strong class="d-inline-block mb-2 text-primary"><%= property.price %></strong>
+            <div class="mb-1 text-muted">Bedroom: <%= property.bedroom %></div>
+            <div class="mb-1 text-muted">Bathrooms: <%= property.bathroom %></div>
+            <div class="mb-1 text-muted">Car space: <%= property.car_space %></div>
+          </div>
+          <div class="col-md-4 d-none d-lg-block">
+            <%= image_tag property.image, :class => 'img-fluid' if property.image.present? %>
+          </div>
+        </div>
+      </div>
+    <% end %>
   <% end %>
-<% end %>
+</div>
 <% if @properties.empty? %>
   <p>No results found for this search</p>
 <% end %>
