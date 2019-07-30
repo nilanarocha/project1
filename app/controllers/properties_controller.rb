@@ -8,14 +8,15 @@ class PropertiesController < ApplicationController
     sql_complement = []
     # Checking if search was informed via search form
     # if informed, should add to the query
-    unless @search.empty?
+    # .blank? checking if the variable exist
+    unless @search.blank?
       # searching case insensitive "LOWER(address) LIKE LOWER('%#{@search}%')"
       sql_complement.push("(LOWER(address) LIKE LOWER('%#{@search}%') OR LOWER(description) LIKE LOWER('%#{@search}%'))")
     end
 
     # Checking if property type was informed via search form
     # if informed, should add to the query
-    if @property_type != 'all'
+    if !@property_type.blank? && @property_type != 'all'
       # seaching only for the specified property type
       sql_complement.push("property_types_id=#{PropertyType.find_by(name: @property_type).id}")
     end
