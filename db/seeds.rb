@@ -19,8 +19,8 @@ PropertyType.create(name: 'Townhouse')
 Agent.destroy_all
 puts 'Creating agents'
 
-Agent.create(name: 'John', phone: '0344 089 756', email: 'john@john.com')
-Agent.create(name: 'John', phone: '0344 089 756', email: 'john@john.com')
+Agent.create(name: 'Hobert', phone: '0344 089 756', email: 'hobert@home.com')
+Agent.create(name: 'Meagan', phone: '0344 079 706', email: 'meagan@home.com')
 
 Property.destroy_all
 puts 'Creating property'
@@ -42,7 +42,7 @@ Property.create(
   image: 'https://i2.au.reastatic.net/800x600/65120f63b60cbb89d4cbbf853945054ffed6d741f6f1164c517aac8e1677f548/main.jpg',
   location: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.477210830517!2d151.19715921547626!3d-33.87736162693527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae2544c9d017%3A0x490ff8c094b625d6!2s1+Pyrmont+St%2C+Ultimo+NSW+2007!5e0!3m2!1sen!2sau!4v1564449456915!5m2!1sen!2sau',
   property_types_id: PropertyType.find_by(name: 'House').id,
-  agents_id: Agent.find_by(name: 'John').id
+  agents_id: Agent.find_by(name: 'Hobert').id
 )
 Property.create(
   address: '2A McDonald St, Cronulla',
@@ -79,7 +79,7 @@ Property.create(
   image: 'https://www.realestate.com.au/blog/images/1600x1600-fit,progressive/2018/09/03124057/capi_85c56dd16de2bb27937d2d9bf709348a_919959291b91444e3973d182358d49af.jpeg',
   location: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.6735185098855!2d151.15422474253538!3d-34.05224498514759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12c81104c664e5%3A0xe76f79cae4610f77!2s2A+McDonald+St%2C+Cronulla+NSW+2230!5e0!3m2!1sen!2sau!4v1564450362609!5m2!1sen!2sau',
   property_types_id: PropertyType.find_by(name: 'Apartment').id,
-  agents_id: Agent.find_by(name: 'John').id
+  agents_id: Agent.find_by(name: 'Meagan').id
 )
 Property.create(
   address: '9/1 Castlereagh St, Sydney',
@@ -109,7 +109,7 @@ Property.create(
   image: 'https://sydney.frasershospitality.com/d/fssydney/media/Images/__thumbs_1050_567_crop/Studio-Deluxe-Room.jpg',
   location: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.903423442658!2d151.2075546154759!3d-33.86637972636508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae402d0159d7%3A0xedb7f77574c4d5d8!2s9%2F1+Castlereagh+St%2C+Sydney+NSW+2000!5e0!3m2!1sen!2sau!4v1564453949838!5m2!1sen!2sau',
   property_types_id: PropertyType.find_by(name: 'Studio').id,
-  agents_id: Agent.find_by(name: 'John').id
+  agents_id: Agent.find_by(name: 'Hobert').id
 )
 Property.create(
   address: '2/24 Marlo Road, Cronulla',
@@ -124,10 +124,10 @@ Property.create(
   - Additional fourth bedroom or study with private balcony
   - Internal laundry, single motorised garage with internal access
   - Entertaining terrace with built-in bench and outside shower',
-  image: 'https://i2.au.reastatic.net/800x600/f72cea3cc252d32169f863f5dec11af19c5469d3dd65f189a5bc28e75757bd59/main.jpg',
+  image: 'https://i2.au.reastatic.net/800x600/c27c31232d01dbd0c3e816edad759cb4654f685527db786ea0c04a3aebe26357/main.jpg',
   location: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.8476889181843!2d151.15148981548086!3d-34.04777793580206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12c81a942408ad%3A0xb063531ba64810df!2s2%2F24+Marlo+Rd%2C+Cronulla+NSW+2230!5e0!3m2!1sen!2sau!4v1564452933069!5m2!1sen!2sau',
   property_types_id: PropertyType.find_by(name: 'Townhouse').id,
-  agents_id: Agent.find_by(name: 'John').id
+  agents_id: Agent.find_by(name: 'Meagan').id
 )
 Property.create(
   address: '28/149 Pyrmont Street',
@@ -147,5 +147,5 @@ Property.create(
   image: 'https://i2.au.reastatic.net/800x600/bbe046997f98ae49d94210bd7ee706cf77446a1b5852aa6b2e509b66b7ffaaf6/main.jpg',
   location: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.8356219445245!2d151.18722831547606!3d-33.86812692645579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae348f671e13%3A0x8ab4e0c63e9d83c7!2s10F%2F5+Tambua+St%2C+Pyrmont+NSW+2009!5e0!3m2!1sen!2sau!4v1564454544130!5m2!1sen!2sau',
   property_types_id: PropertyType.find_by(name: 'House').id,
-  agents_id: Agent.find_by(name: 'John').id
+  agents_id: Agent.find_by(name: 'Hobert').id
 )
