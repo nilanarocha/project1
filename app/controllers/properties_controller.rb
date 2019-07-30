@@ -16,6 +16,7 @@ class PropertiesController < ApplicationController
 
     # Checking if property type was informed via search form
     # if informed, should add to the query
+
     if !@property_type.blank? && @property_type != 'all'
       # seaching only for the specified property type
       sql_complement.push("property_types_id=#{PropertyType.find_by(name: @property_type).id}")
