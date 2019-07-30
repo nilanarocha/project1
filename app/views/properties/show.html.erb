@@ -1,15 +1,21 @@
 <h1><%= @property.address %></h1>
 <%= image_tag @property.image, :class => 'style-item-img' if @property.image.present? %>
-<p>Property Type: <%= @property_type.name %></p>
-<div class="property-description">
-  <%= @property.description %>
-</div>
-<% if @property.location.present? %>
-  <iframe src="<%= @property.location %>" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-<% end %>
-<div class="property-agent">
-  <p>Agent:</p>
-  <p><%= @agent.name %></p>
-  <p><%= @agent.email %></p>
-  <p><%= @agent.phone %></p>
+<div class="row">
+  <div class="col-md-8">
+    <p>Property Type: <%= @property_type.name %></p>
+    <div class="property-description">
+      <%= @property.description %>
+    </div>
+    <% if @property.location.present? %>
+      <iframe src="<%= @property.location %>" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <% end %>
+  </div>
+  <div class="col-md-4">
+    <div class="property-agent">
+      <p>Agent:</p>
+      <p><%= @agent.name %></p>
+      <p><%= @agent.email %></p>
+      <p><%= @agent.phone %></p>
+    </div>
+  </div>
 </div>
