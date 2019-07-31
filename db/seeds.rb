@@ -37,16 +37,14 @@ Property.create(
   car_space: 1,
   price: '$ 1125/w',
   description:
-  'This terrace presents an exciting opportunity to rent a unique property in a premium Pyrmont setting.
-  This residence has been renovated throughout and provides excellent scope for families.
-  Features include:
-  - Well-appointed throughout and presented in great condition
-  - Two-level floorplan that features generous upstairs bedrooms
-  - Well-equipped open gas kitchen flowing to outdoor area, full bathroom
-  - Private outdoor areas include a courtyard garden, patio and terrace
-  - Ready to live in or lease out immediately with scope to update
-  - Rarely does an opportunity arise that presents a lifestyle of such value, versatility and prime positioning with Pyrmont\'s host of cafes,
-  shopping and the light rail station just a short stroll away.',
+  '<p>This terrace presents an exciting opportunity to rent a unique property in a premium Pyrmont setting. This residence has been renovated throughout and provides excellent scope for families.</p>
+  <p>Features include:</p>
+  <p>- Well-appointed throughout and presented in great condition</p>
+  <p>- Two-level floorplan that features generous upstairs bedrooms</p>
+  <p>- Well-equipped open gas kitchen flowing to outdoor area, full bathroom</p>
+  <p>- Private outdoor areas include a courtyard garden, patio and terrace</p>
+  <p>- Ready to live in or lease out immediately with scope to update</p>
+  <p>- Rarely does an opportunity arise that presents a lifestyle of such value, versatility and prime positioning with Pyrmont\'s host of cafes, shopping and the light rail station just a short stroll away.</p>',
   image: 'https://i2.au.reastatic.net/800x600/65120f63b60cbb89d4cbbf853945054ffed6d741f6f1164c517aac8e1677f548/main.jpg',
   location: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.477210830517!2d151.19715921547626!3d-33.87736162693527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae2544c9d017%3A0x490ff8c094b625d6!2s1+Pyrmont+St%2C+Ultimo+NSW+2007!5e0!3m2!1sen!2sau!4v1564449456915!5m2!1sen!2sau',
   property_types_id: PropertyType.find_by(name: 'House').id,
