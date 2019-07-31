@@ -1,6 +1,9 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  get 'sessions/create'
+  get 'sessions/destroy'
+  resources :users
   get '/properties/list' => 'properties#index'
   get '/properties/:id' => 'properties#show'
   get '/agents/:id' => 'agents#show'
@@ -9,5 +12,12 @@ Rails.application.routes.draw do
   resources :homepage
   resources :properties
   resources :agents
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+  get 'admin' => 'admin#index'
+  controller :sessions do
+    get 'login' => :new
+    post 'login' => :create
+    delete 'logout' => :destroy
+  end
 end
+# For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

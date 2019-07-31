@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 class AgentsController < ApplicationController
+  skip_before_action :authorize
   def index
     @agents = Agent.all
    end
