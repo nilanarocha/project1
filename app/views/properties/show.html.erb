@@ -19,6 +19,12 @@
       <p><%= @agent.name %></p>
       <p><%= @agent.email %></p>
       <p><%= @agent.phone %></p>
+      <hr/>
+      <form method="POST" action="https://formspree.io/nilanaarquitetura@gmail.com">
+        <input type="email" name="email" placeholder="Your email">
+        <textarea name="message" placeholder="Message"></textarea>
+        <button type="submit">Send Email</button>
+      </form>
     </div>
   </div>
 </div>
