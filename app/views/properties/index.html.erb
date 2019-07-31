@@ -12,7 +12,7 @@
             <div class="mb-1 text-muted">Bathrooms: <%= property.bathroom %></div>
             <div class="mb-1 text-muted">Car space: <%= property.car_space %></div>
           </div>
-          <div class="col-md-4 d-none d-lg-block">
+          <div id="box" class="col-md-4 d-none d-lg-block">
             <%= image_tag property.image, :class => 'img-fluid' if property.image.present? %>
           </div>
         </div>

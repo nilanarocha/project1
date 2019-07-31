@@ -30,7 +30,7 @@ Property.create(
   bedroom: 3,
   bathroom: 2,
   car_space: 1,
-  price: '$1125/w',
+  price: '$ 1125/w',
   description:
   'This terrace presents an exciting opportunity to rent a unique property in a premium Pyrmont setting.
   This residence has been renovated throughout and provides excellent scope for families.
@@ -52,7 +52,7 @@ Property.create(
   bedroom: 3,
   bathroom: 2,
   car_space: 2,
-  price: '$3773/w',
+  price: '$ 3773/w',
   description: 'Fully Furnished, Cronulla Ocean View Apartment
   Wake up to spectacular sunrises.
   Every day can be as relaxed or active as you want!
@@ -88,7 +88,7 @@ Property.create(
 )
 Property.create(
   address: '9/1 Castlereagh St, Sydney',
-  price: '$600/w',
+  price: '$ 600/w',
   bedroom: 0,
   bathroom: 0,
   car_space: 1,
@@ -120,7 +120,7 @@ Property.create(
 )
 Property.create(
   address: '2/24 Marlo Road, Cronulla',
-  price: '$950/w',
+  price: '$ 950/w',
   bedroom: 4,
   bathroom: 2,
   car_space: 1,
@@ -141,7 +141,7 @@ Property.create(
 )
 Property.create(
   address: '28/149 Pyrmont Street',
-  price: '$1100/w',
+  price: '$ 1100/w',
   bedroom: 2,
   bathroom: 2,
   car_space: 1,
