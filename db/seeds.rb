@@ -57,7 +57,7 @@ Property.create(
   Wake up to spectacular sunrises.
   Every day can be as relaxed or active as you want!
   Enjoy outstanding foreshore, promenade walks along the Esplanade footpath stretching from Bass and Flinders monument at the mouth of Port Hacking to Wanda surf Life Saving Club and passing by the Norfolk Island pine trees featured in some of the view photos taken from the apartment.
-  Located next to Cronulla (South) Surf Life Saving Club and within easy walking to Cronulla/s shops, cinema, library and clubs, this fully renovated apartment with top floor, penthouse position, will be your home to explore the area/s abundance of top class restaurants, cafes, beaches and other natural attractions.
+  Located next to Cronulla (South) Surf Life Saving Club and within easy walking to Cronulla\'s shops, cinema, library and clubs, this fully renovated apartment with top floor, penthouse position, will be your home to explore the area\'s abundance of top class restaurants, cafes, beaches and other natural attractions.
   This spacious, open plan, ocean view residence is one of only 2 apartments occupying the top floor with easy access up a couple of flights of stairs (building entry is at level 1).
   Features include:
   - Spectacular ocean view
@@ -80,7 +80,7 @@ Property.create(
   Lean To Surf at Cronulla Beach.
   Kayak the Port Hacking and Woronora Rivers.
   With horse riding, ten pin bowling, rock climbing, children/s indoor play areas, museums and galleries, Leisure centres, cinemas and Golf courses near by, it is sure to keep you entertained from start to finish.
-  Please ignore any online tenancy application and use the contact agent/email agent function to check availability for your preferred dates by email.',
+  Please ignore any online tenancy application and use the \'contact agent/email\' agent function to check availability for your preferred dates by email.',
   image: 'https://www.realestate.com.au/blog/images/1600x1600-fit,progressive/2018/09/03124057/capi_85c56dd16de2bb27937d2d9bf709348a_919959291b91444e3973d182358d49af.jpeg',
   location: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.6735185098855!2d151.15422474253538!3d-34.05224498514759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12c81104c664e5%3A0xe76f79cae4610f77!2s2A+McDonald+St%2C+Cronulla+NSW+2230!5e0!3m2!1sen!2sau!4v1564450362609!5m2!1sen!2sau',
   property_types_id: PropertyType.find_by(name: 'Apartment').id,
