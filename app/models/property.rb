@@ -13,6 +13,11 @@
 #  updated_at        :datetime         not null
 #  agents_id         :bigint
 #  property_types_id :bigint
+#  price             :text
+#  bedroom           :integer
+#  bathroom          :integer
+#  car_space         :integer
+#  second_image      :text
 #
 
 class Property < ApplicationRecord
