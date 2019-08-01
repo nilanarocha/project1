@@ -8,9 +8,9 @@
           <div class="col-md-8 p-4 d-flex flex-column position-static">
             <h3 class="mb-0"><%= property.address %></h3>
             <strong class="d-inline-block mb-2 text-primary"><%= property.price %></strong>
-            <div class="mb-1 text-muted">Bedrooms: <%= property.bedroom %></div>
-            <div class="mb-1 text-muted">Bathrooms: <%= property.bathroom %></div>
-            <div class="mb-1 text-muted">Car space: <%= property.car_space %></div>
+            <div class="mb-1 text-muted"><img src="https://banner2.kisspng.com/20180501/yxq/kisspng-bedroom-house-computer-icons-hotel-icon-5ae82c14872050.8204895215251650765535.jpg" width="22" height="22" class="d-inline-block align-top" alt="bedroom">Beds: <%= property.bedroom %></div>
+            <div class="mb-1 text-muted"><img src="https://img.lovepik.com/element/40072/7991.png_860.png" width="25" height="25" class="d-inline-block align-top" alt="bathroom">Bath: <%= property.bathroom %></div>
+            <div class="mb-1 text-muted"><img src="https://www.clipartmax.com/png/middle/436-4362839_dealership-appointments-garage-icon.png" width="25" height="25" class="d-inline-block align-top" alt="car space">Parking: <%= property.car_space %></div>
           </div>
           <div id="box" class="col-md-4 d-none d-lg-block">
             <%= image_tag property.image, :class => 'img-fluid' if property.image.present? %>
