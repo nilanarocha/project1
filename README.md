@@ -1,4 +1,21 @@
-One Real Estate webpage for This project I using Ruby, Rails and Postgress. 
+#HoMe Real-estate
+
+##This is my first project using Ruby on Rails and PostgreSQl
+
+<img src="Screen Shot 2019-07-11 at 11.37.06 am.png" alt="grid" Width="250" height="400"/> 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 rails new real-estate —skip-git -T  -d postgresql

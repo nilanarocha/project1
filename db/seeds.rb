@@ -31,7 +31,7 @@ Property.destroy_all
 puts 'Creating property'
 
 Property.create(
-  address: '1/2-4 Pyrmont Street, Pyrmont, NSW 2000',
+  address: '1/2-4 Pyrmont Street, Pyrmont, NSW, 2000',
   bedroom: 3,
   bathroom: 2,
   car_space: 1,

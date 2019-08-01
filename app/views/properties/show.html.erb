@@ -17,14 +17,16 @@
         <%= image_tag @agent.image, :class => 'img-thumbnail' if @agent.image.present? %>
       <% end %>
       <p><%= @agent.name %></p>
-      <p><%= @agent.email %></p>
-      <p><%= @agent.phone %></p>
-      <hr/>
-      <form method="POST" action="https://formspree.io/nilanaarquitetura@gmail.com">
-        <input type="email" name="email" placeholder="Your email">
-        <textarea name="message" placeholder="Message"></textarea>
-        <button type="submit">Send Email</button>
-      </form>
-    </div>
-  </div>
+      <p><img src="https://www.pinclipart.com/picdir/middle/123-1236933_envelope-message-send-mail-packet-letter-email-email.png" width="22" height="22" class="d-inline-block align-top" alt="email"></h3>
+      <%= @agent.email %></p>
+    <p><img src="https://library.kissclipart.com/20180905/poe/kissclipart-phone-icon-black-and-white-clipart-telephone-compu-93efd166e386fa7e.jpg" width="20" height="20" class="d-inline-block align-top" alt="phone"></h3>
+    <%= @agent.phone %></p>
+  <hr/>
+  <form method="POST" action="https://formspree.io/nilanaarquitetura@gmail.com">
+    <input  class="input-agent" type="email" name="email" placeholder="Your email">
+    <textarea class="textarea" name="message" placeholder="Message"></textarea>
+    <button class="btn btn-dark" type="submit">Send Email</button>
+  </form>
+</div>
+</div>
 </div>
