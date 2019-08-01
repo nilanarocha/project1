@@ -44,8 +44,10 @@
     </div>
   </nav>
 
-  <div class="container">
-    <%= yield %>
+  <div class="<%= content_for :homepage_class %>">
+    <div class="container">
+      <%= yield %>
+    </div>
   </div>
 
   <footer>
