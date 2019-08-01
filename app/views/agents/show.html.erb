@@ -1,10 +1,11 @@
-<h1><%= @agent.name %></h1>
+<h1 class="default-title"><%= @agent.name %></h1>
 <%= image_tag @agent.image, :class => 'img-thumbnail' if @agent.image.present? %>
 <p><%= @agent.name %></p>
 <p><%= @agent.email %></p>
 <p><%= @agent.phone %></p>
+<hr/>
+<h2 class="default-title" >Properties listed to <%= @agent.name %></h2>
 <div class="row mb-2">
-  <h2>Properties listed to <%= @agent.name %></h2>
   <% @properties.each do |property| %>
     <%= link_to property, :class => "property-list-item-link", :method => 'get' do %>
       <div class="col-md-12">

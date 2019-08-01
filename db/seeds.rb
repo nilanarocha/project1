@@ -47,6 +47,7 @@ Property.create(
   <p>- Rarely does an opportunity arise that presents a lifestyle of such value, versatility and prime positioning with Pyrmont\'s host of cafes, shopping and the light rail station just a short stroll away.</p>
   <p>Please use the \'contact agent/email\' to check availability for your preferred dates by email.</p>',
   image: 'https://i2.au.reastatic.net/800x600/65120f63b60cbb89d4cbbf853945054ffed6d741f6f1164c517aac8e1677f548/main.jpg',
+  second_image: 'https://cdn.decorpad.com/photos/2012/03/31/a89c09e1cd53.jpg',
   location: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.477210830517!2d151.19715921547626!3d-33.87736162693527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae2544c9d017%3A0x490ff8c094b625d6!2s1+Pyrmont+St%2C+Ultimo+NSW+2007!5e0!3m2!1sen!2sau!4v1564449456915!5m2!1sen!2sau',
   property_types_id: PropertyType.find_by(name: 'House').id,
   agents_id: Agent.find_by(name: 'Hobert').id
@@ -91,6 +92,7 @@ Property.create(
   Leisure centres, cinemas and Golf courses near by, it is sure to keep you entertained from start to finish.</p>
   <p>Please use the \'contact agent/email\' to check availability for your preferred dates by email.</p>',
   image: 'https://www.realestate.com.au/blog/images/1600x1600-fit,progressive/2018/09/03124057/capi_85c56dd16de2bb27937d2d9bf709348a_919959291b91444e3973d182358d49af.jpeg',
+  second_image: 'http://www.slaterarchitects.com.au/wp-content/uploads/2019/03/Beach-House-bathroom-designs-2.jpg',
   location: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.6735185098855!2d151.15422474253538!3d-34.05224498514759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12c81104c664e5%3A0xe76f79cae4610f77!2s2A+McDonald+St%2C+Cronulla+NSW+2230!5e0!3m2!1sen!2sau!4v1564450362609!5m2!1sen!2sau',
   property_types_id: PropertyType.find_by(name: 'Apartment').id,
   agents_id: Agent.find_by(name: 'Meagan').id
@@ -126,6 +128,7 @@ Property.create(
   <p>Please use the \'contact agent/email\' to check availability for your preferred dates by email.</p>',
   image: 'https://sydney.frasershospitality.com/d/fssydney/media/Images/__thumbs_1050_567_crop/Studio-Deluxe-Room.jpg',
   location: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.903423442658!2d151.2075546154759!3d-33.86637972636508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae402d0159d7%3A0xedb7f77574c4d5d8!2s9%2F1+Castlereagh+St%2C+Sydney+NSW+2000!5e0!3m2!1sen!2sau!4v1564453949838!5m2!1sen!2sau',
+  second_image: 'https://i.pinimg.com/originals/c5/f9/d9/c5f9d9e65975c4d3a71661eb6ca581ca.jpg',
   property_types_id: PropertyType.find_by(name: 'Studio').id,
   agents_id: Agent.find_by(name: 'Hobert').id
 )
@@ -147,6 +150,7 @@ Property.create(
   <p>- Entertaining terrace with built-in bench and outside shower</p>
   <p>Please use the \'contact agent/email\' to check availability for your preferred dates by email.</p>',
   image: 'https://i2.au.reastatic.net/800x600/f72cea3cc252d32169f863f5dec11af19c5469d3dd65f189a5bc28e75757bd59/main.jpg',
+  second_image: 'https://www.tlcinteriors.com.au/wp-content/uploads/2019/05/house-rules-2019-eliza-and-mikaela-bathroom-with-marble-herringbone-tiles.jpg',
   location: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.8476889181843!2d151.15148981548086!3d-34.04777793580206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12c81a942408ad%3A0xb063531ba64810df!2s2%2F24+Marlo+Rd%2C+Cronulla+NSW+2230!5e0!3m2!1sen!2sau!4v1564452933069!5m2!1sen!2sau',
   property_types_id: PropertyType.find_by(name: 'Townhouse').id,
   agents_id: Agent.find_by(name: 'Meagan').id
@@ -172,6 +176,7 @@ Property.create(
   context, it is metres to harbourside parks, cafes, light rail transport, and boutique shopping and a pleasant walk to the city.</p>
   <p>Please use the \'contact agent/email\' to check availability for your preferred dates by email.</p>',
   image: 'https://i2.au.reastatic.net/800x600/bbe046997f98ae49d94210bd7ee706cf77446a1b5852aa6b2e509b66b7ffaaf6/main.jpg',
+  second_image: 'https://www.theeminence.com.au/site/wp-content/uploads/eminence-carlton-melbourne-apartment-3b-1-1000x641.jpg',
   location: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.8356219445245!2d151.18722831547606!3d-33.86812692645579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae348f671e13%3A0x8ab4e0c63e9d83c7!2s10F%2F5+Tambua+St%2C+Pyrmont+NSW+2009!5e0!3m2!1sen!2sau!4v1564454544130!5m2!1sen!2sau',
   property_types_id: PropertyType.find_by(name: 'Apartment').id,
   agents_id: Agent.find_by(name: 'Hobert').id
