@@ -101,6 +101,9 @@ footer {
   // margin-top: 40px;
   background-color: #F8F9FA;
   padding: 50px;
+
+  // Generated from https://www.cssmatic.com/box-shadow
+  box-shadow: 0px 0px 10px 5px #858485;
 }
 
 .homepage-wrapper {
@@ -115,5 +118,26 @@ footer {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.footer-list-title {
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.footer-list-item {
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.footer-list-icon {
+  margin: 10px 10px 10px 0;
+}
+
+.property-search-title {
+  text-align: left;
+}
+
+.page-wrapper {
   padding-top: 100px;
 }
