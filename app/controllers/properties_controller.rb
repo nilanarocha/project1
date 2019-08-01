@@ -36,5 +36,6 @@ class PropertiesController < ApplicationController
     @property = Property.find params[:id]
     @agent = Agent.find(@property.agents_id)
     @property_type = PropertyType.find(@property.property_types_id)
+    @images = [@property.image, @property.second_image].compact
   end
 end

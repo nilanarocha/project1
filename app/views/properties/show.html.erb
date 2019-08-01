@@ -1,5 +1,21 @@
 <h1 class="default-title"><%= @property.address %></h1>
-<%= image_tag @property.image, :class => 'style-item-img' if @property.image.present? %>
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+  <div class="carousel-inner">
+    <% @images.each_with_index do |image, index| %>
+      <div class="carousel-item <%= 'active' if index == 0 %>">
+        <img src="<%= image %>" class="d-block w-100" alt="<%= @property.address %>">
+      </div>
+    <% end %>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
 <div class="row">
   <div class="col-md-8">
     <p>Property Type: <%= @property_type.name %></p>
@@ -7,7 +23,9 @@
       <%= @property.description.html_safe %>
     </div>
     <% if @property.location.present? %>
-      <iframe src="<%= @property.location %>" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="<%= @property.location %>" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
     <% end %>
   </div>
   <div class="col-md-4">
@@ -28,6 +46,4 @@
     <input type="hidden" name="_subject" id="email-subject" value="HoMe Website - Enquiry for <%= @property_type.name %> - <%= @property.address %>">
     <button class="btn btn-dark" type="submit">Send Email</button>
   </form>
-</div>
-</div>
 </div>

@@ -97,8 +97,6 @@ footer {
 
 .wrapper {
   width: 100%;
-
-  // margin-top: 40px;
   background-color: #F8F9FA;
   padding: 50px;
 
@@ -140,4 +138,13 @@ footer {
 
 .page-wrapper {
   padding-top: 100px;
+}
+
+.property-description {
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+
+.nav-link {
+  font-weight: bold;
 }

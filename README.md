@@ -67,46 +67,13 @@ The demo page is hosted on Heroku you can access on this link https://home-reale
 
 <img src="https://user-images.githubusercontent.com/39023533/62270471-6d576f80-b479-11e9-830f-46eb573536dd.png" alt="" Width="100%" height=""/>
 
+### Admin  
+
+<img src="https://user-images.githubusercontent.com/39023533/62299934-415bde80-b4b9-11e9-86e4-84997a86426a.png" alt="" Width="100%" height=""/>
+
 ## Author
 
 *Nilana Rocha (nilanarocha)*
 + <http://github.com/nilanarocha>
-
-
-
-
-
-
-
-
-
-
-
-Description:
-Hobert is an experienced and tenacious sales agent who prides himself on leaving no stone unturned in the pursuit of achieving a premium result. A proud Sydney resident, Hobert possesses a wealth of local knowledge combined with over eighteen years of practice within the Real Estate industry.
-
-- Licensed Real Estate Agent
-
-- Involved in over 500 sales transactions
-
-- Direct and friendly approach with both buyers and sellers
-
-- Local resident in the Sydney CBD. 
-
-- Extensive knowledge of rent in all price ranges
-
-- Mentored from a young age by the top performing agents in the country
-
-
-description Meagan: 
-With over 30 years experience in Real Estate and Finance Liz has an extensive accounting background gained from working with local companies and companies in both the UK and the United States.
-
-Meagan's background in commercial real estate, trust account and general business practice give her a sound background and a broad range of understanding across all aspects of the Real estate business resulting in the best possible service to all clients.
-
-- over 20 years of industry experience
-
-- Real Estate License
-
-- Can do attitude with an ability to understand all aspects of the Real Estate business.
 
 
