@@ -1,8 +1,24 @@
-#HoMe Real-estate
+# HoMe Real-estate
 
-##This is my first project using Ruby on Rails and PostgreSQl
+##This is my first project using Ruby on Rails and PostgreSQl.
+##Choose your next rantal house with HoMe. More than twenty years of market experience. 
 
-<img src="Screen Shot 2019-07-11 at 11.37.06 am.png" alt="grid" Width="250" height="400"/> 
+### Homepage
+<img src="https://user-images.githubusercontent.com/39023533/62269677-18b2f500-b477-11e9-9d28-7b74778defca.png" alt="" Width="100%" height=""/>
+<img src="https://user-images.githubusercontent.com/39023533/62269748-5c0d6380-b477-11e9-84f3-8740c8e850ad.png" alt="" Width="100%" height=""/> 
+
+### Property list  
+<img src="https://user-images.githubusercontent.com/39023533/62269841-a7c00d00-b477-11e9-9ab2-b62702324801.png" alt="" Width="100%" height=""/>
+<img src="https://user-images.githubusercontent.com/39023533/62270155-a6431480-b478-11e9-8e9f-3e58aa62c515.png" alt="" Width="100%" height=""/>
+
+### Agent list  
+
+<img src="https://user-images.githubusercontent.com/39023533/62270471-6d576f80-b479-11e9-830f-46eb573536dd.png" alt="" Width="100%" height=""/>
+
+
+## Demo 
+
+The demo page is hosted on Github pages you can access on this link https://nilanarocha.github.io/tic-tac-toe/. You can find more details of how to configure and publish source from Github into Github pages acessing this link: https://help.github.com/en/articles/configuring-a-publishing-source-for-github-pages .
 
 
 
