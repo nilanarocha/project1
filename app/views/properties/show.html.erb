@@ -25,6 +25,7 @@
   <form method="POST" action="https://formspree.io/nilanaarquitetura@gmail.com">
     <input  class="input-agent" type="email" name="email" placeholder="Your email">
     <textarea class="textarea" name="message" placeholder="Message"></textarea>
+    <input type="hidden" name="_subject" id="email-subject" value="HoMe Website - Enquiry for <%= @property_type.name %> - <%= @property.address %>">
     <button class="btn btn-dark" type="submit">Send Email</button>
   </form>
 </div>
