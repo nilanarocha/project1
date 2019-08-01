@@ -45,6 +45,15 @@ Also, make sure the Github branch is up-to-date with your code changes. After th
 ```
 git push origin master
 git push heroku master
+```
+
+If you need to clean the database, please access https://data.heroku.com/datastores, to find the project database and click in `Reset database` button
+
+<img width="1436" alt="Screen Shot 2019-08-02 at 12 57 42 am" src="https://user-images.githubusercontent.com/39023533/62304026-8cc5bb00-b4c0-11e9-9a5b-df7fcee077c7.png">
+
+After reset the database, run these commands in your command line:
+
+```
 heroku run rails db:migrate
 heroku run rails db:seed
 heroku open
