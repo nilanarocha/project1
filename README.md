@@ -2,26 +2,33 @@
 
 This is my first project using Ruby on Rails and PostgreSQl.
 
-## Setup 
+## Setup
 
 1. Install PostgreSQL
 2. Install Ruby
 3. Install Rails
-4. Clone this repository 
+4. Clone this repository
 5. Run these commands
-5.1. Create database
+   5.1. Create database
+
 ```
 rails db:create
 ```
+
 5.2 Run database migrations for this project
+
 ```
 rails db:migrate
 ```
-5.3 Populate database 
+
+5.3 Populate database
+
 ```
 rails db:seed
 ```
+
 5.4 Run local server
+
 ```
 rails server
 ```
@@ -40,7 +47,7 @@ which heroku
 heroku login
 ```
 
-Also, make sure the Github branch is up-to-date with your code changes. After that run these commands: 
+Also, make sure the Github branch is up-to-date with your code changes. After that run these commands:
 
 ```
 git push origin master
@@ -59,30 +66,30 @@ heroku run rails db:seed
 heroku open
 ```
 
-## Demo 
+## Demo
 
 The demo page is hosted on Heroku you can access on this link https://home-realestate.herokuapp.com.
 
 ## Screenshots
 
 ### Homepage
+
 <img src="https://user-images.githubusercontent.com/39023533/62294646-c42b6c00-b4ae-11e9-8128-7e1090bd0cbf.png" alt="" Width="100%" height=""/>
  
 ### Property list  
 <img src="https://user-images.githubusercontent.com/39023533/62269841-a7c00d00-b477-11e9-9ab2-b62702324801.png" alt="" Width="100%" height=""/>
 <img src="https://user-images.githubusercontent.com/39023533/62270155-a6431480-b478-11e9-8e9f-3e58aa62c515.png" alt="" Width="100%" height=""/>
 
-### Agent list  
+### Agent list
 
 <img src="https://user-images.githubusercontent.com/39023533/62270471-6d576f80-b479-11e9-830f-46eb573536dd.png" alt="" Width="100%" height=""/>
 
-### Admin  
+### Admin
 
 <img src="https://user-images.githubusercontent.com/39023533/62299934-415bde80-b4b9-11e9-86e4-84997a86426a.png" alt="" Width="100%" height=""/>
 
 ## Author
 
-*Nilana Rocha (nilanarocha)*
-+ <http://github.com/nilanarocha>
+_Nilana Rocha (nilanarocha)_
 
-
+- <http://github.com/nilanarocha>
