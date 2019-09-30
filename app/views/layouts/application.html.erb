@@ -1,89 +1,88 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>HoMe</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <%= csrf_meta_tags %>
-  <%= csp_meta_tag %>
-  <%= stylesheet_link_tag    'application', media: 'all' %>
-  <%= javascript_include_tag 'application' %>
-</head>
-<body>
-  <nav class="navbar navbar-expand-md navbar-light bg-light">
-    <div class="container">
-      <a class="navbar-brand" href="/">
-        <h3 class="name-logo"><img  src="http://www.logospng.com/images/123/iconfinder-social-amp-messaging-ui-black-round-by-123950.png" width="30" height="30" class="d-inline-block align-top" alt="HoMe">HoMe</h3>
-      </a>
-      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="navbar-collapse collapse" id="navbarsExampleDefault" style="">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="/agents">Agents</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/properties">Properties</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Admin</a>
-            <div class="dropdown-menu" aria-labelledby="dropdown01">
-              <a class="dropdown-item" href="/login">Login</a>
-            </div>
-          </li>
-        </ul>
-        <% unless current_page?('/') %>
-          <form action="/properties/list" method="get" class="form-inline my-2 my-lg-0">
-            <input class="form-control" type="search" placeholder="Search" aria-label="Search" name="search" id="search">
-            <button class="btn btn-dark" type="submit">Search</button>
-            
-          </form>
-        <% end %>
+  <head>
+    <title>HoMe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <h3 class="name-logo"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" class="icon" style="
+    margin-right: 20px;
+"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg>HoMe</h3>
+        </a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarsExampleDefault" style="">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/agents">Agents</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/properties">Properties</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Admin</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown01">
+                <a class="dropdown-item" href="/login">Login</a>
+              </div>
+            </li>
+          </ul>
+          <% unless current_page?('/') %>
+            <form action="/properties/list" method="get" class="form-inline my-2 my-lg-0">
+              <input class="form-control" type="search" placeholder="Search" aria-label="Search" name="search" id="search">
+              <button class="btn btn-dark" type="submit">Search</button>
+            </form>
+          <% end %>
+        </div>
+      </div>
+    </nav>
+    <div class="<%= content_for :homepage_class %>">
+      <div class="container page-wrapper">
+        <%= yield %>
       </div>
     </div>
-  </nav>
-
-  <div class="<%= content_for :homepage_class %>">
-    <div class="container page-wrapper">
-      <%= yield %>
-    </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md">
+            <img class="mb-2" src="/docs/4.3/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">
+            <small class="mb-3 text-muted">© 2019</small>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Contact Us </h5>
+            <ul class="list-unstyled text-small">
+              <li class="footer-list-title cronulla-office"><b>Cronulla office</b></li>
+              <li class="footer-list-item cronulla"><img src="https://library.kissclipart.com/20180905/poe/kissclipart-phone-icon-black-and-white-clipart-telephone-compu-93efd166e386fa7e.jpg" width="20" height="15" class="d-inline-block footer-list-icon" alt="phone"></h3>
+              0344 079 706</li>
+            <li class="footer-list-item cronulla"><img src="https://www.pinclipart.com/picdir/middle/123-1236933_envelope-message-send-mail-packet-letter-email-email.png" width="20" height="20" class="d-inline-block footer-list-icon" alt="email"></h3>
+             meagan@home.com</li>
+          <li class="footer-list-title pyrmont-office"><b>Pyrmont office</b></li>
+          <li class="footer-list-item pyrmont"><img src="https://library.kissclipart.com/20180905/poe/kissclipart-phone-icon-black-and-white-clipart-telephone-compu-93efd166e386fa7e.jpg" width="20" height="15" class="d-inline-block footer-list-icon" alt="phone"></h3>
+          0344 089 756</li>
+        <li class="footer-list-item pyrmont"><img src="https://www.pinclipart.com/picdir/middle/123-1236933_envelope-message-send-mail-packet-letter-email-email.png" width="20" height="20" class="d-inline-block footer-list-icon" alt="email"></h3>
+         hobert@home.com</li>
+    </ul>
   </div>
-
-  <footer>
-    <div class="container">
-    <div class="row">
-      <div class="col-12 col-md">
-        <img class="mb-2" src="/docs/4.3/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">
-        <small class="mb-3 text-muted">© 2019</small>
-      </div>
-       <div class="col-6 col-md">
-        <h5>Contact Us </h5>
-        <ul class="list-unstyled text-small">
-          <li class="footer-list-title cronulla-office"><b>Cronulla office</b></li>
-          <li class="footer-list-item cronulla"><img src="https://library.kissclipart.com/20180905/poe/kissclipart-phone-icon-black-and-white-clipart-telephone-compu-93efd166e386fa7e.jpg" width="20" height="15" class="d-inline-block footer-list-icon" alt="phone"></h3>0344 079 706</li>
-          <li class="footer-list-item cronulla"><img src="https://www.pinclipart.com/picdir/middle/123-1236933_envelope-message-send-mail-packet-letter-email-email.png" width="20" height="20" class="d-inline-block footer-list-icon" alt="email"></h3> meagan@home.com</li>
-          <li class="footer-list-title pyrmont-office"><b>Pyrmont office</b></li>
-          <li class="footer-list-item pyrmont"><img src="https://library.kissclipart.com/20180905/poe/kissclipart-phone-icon-black-and-white-clipart-telephone-compu-93efd166e386fa7e.jpg" width="20" height="15" class="d-inline-block footer-list-icon" alt="phone"></h3>0344 089 756</li>
-          <li class="footer-list-item pyrmont"><img src="https://www.pinclipart.com/picdir/middle/123-1236933_envelope-message-send-mail-packet-letter-email-email.png" width="20" height="20" class="d-inline-block footer-list-icon" alt="email"></h3> hobert@home.com</li>
-           
-        </ul>
-      </div>
-
-      <div class="col-6 col-md">
-        <h5>Locations</h5>
-        <ul class="list-unstyled text-small">
-          <li class="footer-list-title cronulla-office"><b>Cronulla office</b></li>
-          <li class="footer-list-item cronulla"><img src="https://image.flaticon.com/icons/png/512/69/69869.png" width="18" height="18" class="d-inline-block footer-list-icon" alt="address"></h3>20/16 Nerang Rd, 2230</li>
-          <li class="footer-list-title pyrmont-office"><b>Pyrmont office</b></li>
-          <li class="footer-list-item pyrmont"><img src="https://image.flaticon.com/icons/png/512/69/69869.png" width="18" height="18" class="d-inline-block footer-list-icon" alt="email"></h3>3/5 Harris St, 2009</li>
-        </ul>
-      </div>
-     
-      
-    </div>
-    
-    </div>
-  </footer>
+  <div class="col-6 col-md">
+    <h5>Locations</h5>
+    <ul class="list-unstyled text-small">
+      <li class="footer-list-title cronulla-office"><b>Cronulla office</b></li>
+      <li class="footer-list-item cronulla"><img src="https://image.flaticon.com/icons/png/512/69/69869.png" width="18" height="18" class="d-inline-block footer-list-icon" alt="address"></h3>
+      20/16 Nerang Rd, 2230</li>
+    <li class="footer-list-title pyrmont-office"><b>Pyrmont office</b></li>
+    <li class="footer-list-item pyrmont"><img src="https://image.flaticon.com/icons/png/512/69/69869.png" width="18" height="18" class="d-inline-block footer-list-icon" alt="email"></h3>
+    3/5 Harris St, 2009</li>
+</ul>
+</div>
+</div>
+</div>
+</footer>
 </body>
 </html>
